@@ -1,47 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
-    background-color: #070F2B;
+    font-family: "Roboto Mono", monospace;
+    background-color: #171717;
+}
+
+header {
+    background-color: #282828;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navegacion ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion ul a li {
+    color: #04BF68;
+}
+
+.navegacion ul li:hover {
+    color: #40ec9c;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: slateblue; */
+    padding: 20px 0;
 }
 
 .main-container {
-    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
+    max-width: 720px;
 }
 
 h2 {
-    color: aliceblue;
-    background-color: #535C91;
+    color: #FFFFFF;
     padding: 0 20px;
 }
 
-.lista {
-    /* background-color: #173540; */
-    padding: 5px 10px;
+.elem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0px;
     list-style: none;
+    width: 100%;
 }
 
 .elem {
-    background-color: #535C91;
-    padding: 20px;
-    margin: 10px 0px;
-    transition: .2s;
-}
-
-.elem a {
-    text-decoration: none;
-    color: aliceblue;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    margin: 5px 0;
+    background-color: #282828;
+    /* border: 1px solid #012030; */
+    transition: transform 0.2s, box-shadow 0.2s;
+    
 }
 
 .elem:hover {
     transform: translate(5px, -5px);
-    box-shadow: -5px 5px #04D939;
+    box-shadow: -5px 5px #04BF68;
+    background-color: #404040;
 }
+
+.elem h3 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+p {
+    background-color: #04BF68;
+    font-size: 1.17rem;
+}
+
+.recuadro {
+    color: #171717;
+    padding: 15px;
+}
+
+footer {
+    color: #04BF68;
+    background-color: #282828;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .main-container {
+        width: 90%;
+    }
+    .recuadro {
+        font-size: 1rem;
+    }
+  }
+  
+  /* Tabletas */
+  @media (min-width: 601px) and (max-width: 1023px) {
+    .main-container {
+        width: 70%;
+    }
+  }
+  
+  /* Laptops y pantallas medianas */
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .main-container {
+        width: 70%;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 1441px) {
+    .main-container {
+        width: 50%;
+    }
+
+    
+  }
+  
