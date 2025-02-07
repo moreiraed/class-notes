@@ -10,24 +10,38 @@ body {
 header {
     background-color: #282828;
     color: #FFFFFF;
-    padding: 1rem;
+    /* padding: 1rem; */
     text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
 }
 
 .navegacion ul{
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-around;
     padding: 0;
+    background-color: #171717;
+    margin: 0;
+    /* padding: 10px; */
 }
 
-.navegacion ul a li {
+.navegacion ul li {
     color: #04BF68;
 }
 
 .navegacion ul li:hover {
     color: #40ec9c;
 }
+
+/* -------------------------------------------------- */
 
 main {
     display: flex;
@@ -53,19 +67,20 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 0px;
+    padding: 15px 0px;
     list-style: none;
     width: 100%;
 }
 
 .elem {
+    font-size: 1.17em;
+    font-weight: bold;
+    width: 100%;
     color: #FFFFFF;
-    padding: 20px 30px;
+    padding: 20px 0px;
     margin: 5px 0;
     background-color: #282828;
-    /* border: 1px solid #012030; */
     transition: transform 0.2s, box-shadow 0.2s;
-    
 }
 
 .elem:hover {
@@ -74,8 +89,8 @@ h2 {
     background-color: #404040;
 }
 
-.elem h3 {
-    margin: 0;
+.elem span {
+    padding: 20px 30px;
 }
 
 h2 {
@@ -83,19 +98,58 @@ h2 {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    width: 100%;
+h3 {
+    color: #FFFFFF;
 }
 
-p {
-    background-color: #04BF68;
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    border: rgba(4, 191, 104, 0.5) 1px solid;
+}
+
+.texto {
     font-size: 1.17rem;
+    color: #FFFFFF;
+    /* text-shadow: black 1px 1px 1px; */
+    font-weight: 400;
+}
+
+.link {
+    font-size: 1.17rem;
+    text-shadow: black 1px 1px 1px;
+    color: #04BF68;
+    padding: 15px 0;
+    align-self: flex-start;
+}
+
+.link:hover {
+    /* color: #04BF68; */
+    /* color: #171717; */
+    text-shadow: #40ec9c 0 0 5px;
+    text-shadow: #04BF68 0 0 5px;
 }
 
 .recuadro {
     color: #171717;
     padding: 15px;
+    background-color: #04BF68;
+    font-size: 1.17rem;
+}
+
+i {
+    padding: 0 15px;
+}
+
+.video {
+    width: 80%;
+    height: 320px;
+    border-radius: 15px;
+    /* box-shadow: #000000 0 0 10px; */
+    border: rgba(4, 191, 104, 0.5) 2px solid;
 }
 
 footer {
@@ -134,7 +188,5 @@ footer {
     .main-container {
         width: 50%;
     }
-
-    
   }
   
