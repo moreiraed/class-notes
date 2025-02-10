@@ -102,6 +102,28 @@ h3 {
     color: #FFFFFF;
 }
 
+.pregunta {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    width: 100%;
+    /* background-color: #404040; */
+    margin: 10px;
+    padding: 10px;
+}
+
+.choice {
+    color:#FFFFFF;
+}
+
+.choice li {
+    display: flex;
+    padding: 5px 0;
+}
+
+.choice span {
+    display: block;
+}
+
 a {
     text-decoration: none;
 }
@@ -151,6 +173,33 @@ i {
     /* box-shadow: #000000 0 0 10px; */
     border: rgba(4, 191, 104, 0.5) 2px solid;
 }
+.pag-nav {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.elem {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.boton {
+    color: #FFFFFF;
+    /* background-color: #04BF68; */
+    background-color: #282828;
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px #04BF68;
+    background-color: #404040;
+    color: #40ec9c;
+}
+
 
 footer {
     color: #04BF68;
@@ -158,6 +207,31 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.iluminacion {
+    opacity: 1;
+    animation-name: iluminacion;
+    animation-duration: 5s;
+    animation-fill-mode: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+  }
+
+  @keyframes iluminacion {
+    0% {
+        color: rgba(255, 255, 255, 0.5);
+        text-shadow: #04BF68 0 0 0px;
+    }
+    50% {
+        color: #FFFFFF;
+        text-shadow: #04BF68 1px 1px 5px;
+    }
+    100% {
+        color: rgba(255, 255, 255, 0.5);
+        text-shadow: #04BF68 0 0 0px;
+    }
+  }
 
 /* Móviles */
 @media (max-width: 600px) {
